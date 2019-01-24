@@ -1,0 +1,39 @@
+$dark-gray: #252527;
+$white: #fff;
+$green: #08FDD8;
+$black: #000;
+
+
+$p-font: 'Open Sans','Verdana', sans-serif;
+$s-font: 'Poppins', 'Helvetica', sans-serif;
+
+
+.font-green {
+  color: $green;
+}
+
+.font-dark-gray {
+  color: $dark-gray;
+}
+
+
+//for media query
+$viewport-increment: 1px; // customize to suite
+
+// Desktop
+$desktop-wide : 1600px;
+$desktop-large : 1440px;
+$desktop-small : 1024px;
+
+//Tablet
+$tablet-large :  992px;
+$tablet-normal :  768px;
+$tablet-small :  600px;
+
+//Phone
+$phone-large :  480px;
+$phone-small :  360px;
+
+// Constraints
+$min: min-width;
+$max: max-width;
