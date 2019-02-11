@@ -1,14 +1,99 @@
-body {
-  background: black;
-  color: white;
-}
+// Hero
 
 .hero {
   height: 100vh;
   display: flex;
   align-items: center;
+  background: $dark-gray;
+  position: relative;
 
   &__text {
-    
+    position: relative;
+    z-index: 10;
+  }
+
+  #particles-js {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 5;
+    background: linear-gradient(to bottom, transparent 60%, rgba(8, 253, 216, 0.10));
+  }
+
+  .mouse {
+    width: 4px;
+    padding: 5px 12px;
+    height: 35px;
+    border: 2px solid #08FDD8;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+    z-index: 10;
+      
+    &__container {
+      display: flex;
+      position: absolute;
+      bottom: 20px;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .scroller {
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: #08FDD8;
+      animation-name: scroll;
+      animation-duration: 2.2s;
+      animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+// Profile
+
+.about {
+  margin: 50px auto;
+  position: relative;
+
+  .profile-img {
+    border: 5px solid $green;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    z-index: 20;
+
+    &__container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .text-content {
+    background: $dark-gray;
+    text-align: center;
+    padding: 100px 25px 50px;
+    margin-top: -70px;
+
+    &__header {
+      color: $green;
+      font-weight: 600;
+    }
+
+    &__sub {
+      color: $white;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+    }
   }
 }

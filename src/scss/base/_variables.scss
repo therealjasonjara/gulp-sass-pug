@@ -4,9 +4,12 @@ $green: #08FDD8;
 $black: #000;
 
 
-$p-font: 'Open Sans','Verdana', sans-serif;
-$s-font: 'Poppins', 'Helvetica', sans-serif;
+$p-font: 'Poppins','Helvetica', sans-serif;
+$s-font: 'Coolvetica', 'Poppins', sans-serif;
 
+.font-white {
+  color: $white;
+}
 
 .font-green {
   color: $green;

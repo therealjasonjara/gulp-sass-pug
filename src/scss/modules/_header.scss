@@ -1,3 +1,16 @@
-body {
- 
+.site-header {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+
+  .logo {
+    font-family: $s-font;
+    font-weight: 400;
+    color: $white;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0;
+    letter-spacing: .3px;
+  }
 }
