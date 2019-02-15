@@ -3,6 +3,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-minify": "^3.1.0",
@@ -10,6 +11,7 @@
     "gulp-sass": "^4.0.2"
   },
   "scripts": {
-    "start": "rm -rf public && gulp"
+    "start-clean": "rm -rf public && gulp",
+    "start": "gulp"
   }
 }

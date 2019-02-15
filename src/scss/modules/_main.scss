@@ -59,10 +59,23 @@
 }
 
 // Profile
+.content {
+  &__header {
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    color: $green;
+  }
+
+  &__sub {
+    letter-spacing: 1px;
+  }
+}
 
 .about {
-  margin: 50px auto;
+  padding: 50px 0 0;
   position: relative;
+  border-bottom: 1px solid $green;
+  background: $dark-gray;
 
   .profile-img {
     border: 5px solid $green;
@@ -79,10 +92,10 @@
     }
   }
 
-  .text-content {
+  .content {
     background: $dark-gray;
     text-align: center;
-    padding: 100px 25px 50px;
+    padding: 100px 25px;
     margin-top: -70px;
 
     &__header {
@@ -94,6 +107,167 @@
       color: $white;
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
+      width: 75%;
+      margin: auto;
     }
+  }
+}
+
+.skills {
+  padding: 50px 0 70px;
+  background: $dark-gray;
+  color: $dark-gray;
+  border-bottom: 1px solid $green;
+
+  .equal {
+    display: flex;
+    flex-direction: inherit;
+  }
+
+  .content {
+    text-align: center;
+    @extend %transition;
+
+
+    &__header {
+      margin-bottom: 50px;
+      color: $green;
+    }
+
+    &__sub {
+      color: $green;
+      @extend %transition;
+    }
+
+    &__border {
+      color: $white;
+      @extend %transition; 
+
+      &:hover {
+        background: $white;
+        // transform: scale(0.99);
+        // -webkit-box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
+        //    -moz-box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
+        //         box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
+  
+        .content__sub {
+          color: $dark-gray;
+        }
+
+        .content__text,
+        .content__list--items,
+        .content__green {
+          color: $dark-gray;
+        }
+      }
+
+      @include media($min, $tablet-normal) {
+        border: 1px solid $green;
+        border-radius: 10px;
+        padding: 0 30px;
+      }
+    }
+
+    &__first {
+      padding-bottom: 40px;
+      
+      @include media($max, $tablet-normal) {
+        border-bottom: 1px solid $green;
+      }
+    }
+
+    &__image {
+      width: 200px;
+      margin: 50px 0;
+    }
+
+    &__text {
+      margin: 20px 0 50px;
+      font-weight: 300;
+      @extend %transition;
+    }
+
+    &__green {
+      color: $green;
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      padding-left: 0;
+      font-weight: 300;
+    }
+  }
+}
+
+.works {
+  padding: 50px 0;
+  //background: $dark-gray;
+  color: $dark-gray;
+  
+  .content {
+    text-align: center;
+    
+    &__header {
+      color: $dark-gray;
+    }
+  }
+
+  &__image {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+
+    .featured {
+      @extend %transition;
+      position: relative;
+      z-index: 5;
+    }
+
+    &:hover {
+      .featured {
+        opacity: 0;
+        transform: scale(1.1);
+      }
+    }
+
+    &--container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--logo {
+      position: absolute;
+      display: block;
+      z-index: 10;
+      width: 238px;
+    }
+
+
+    &--sl {
+      background: #dc4648;
+    }
+
+    &--diy {
+      background: #7b8086;
+    }
+
+    &--iconic {
+      background: #954f20;
+    }
+    
+    &--ukt {
+      background: #9292a8;
+    }
+
+    &--yourdebt {
+      background: #3d365b;
+    }
+
+    &--dpl {
+      background: #1d753c;
+    }
+
   }
 }

@@ -12,13 +12,77 @@
 
 main.site-content
   section.about#about
-    .container-fluid.px-0
+    .container-fluid
       .row
-        .col-12
+        .col-12.px-0
           .profile-img__container
             .profile-img
               img(src='./assets/images/icon.jpg').img-fluid
+        .col-12.px-0
+          .content
+            h1.content__header Hi, I’m Jason. Nice to meet you!
+            h3.content__sub I started nearly 5 years ago, and from that time, I already made over hundreds of websites. From static websites to full Wordpress sites, you name it. I'm quietly confident, naturally curious, and perpetually improving my craft.
+  section.skills#skills
+    .container
+      .row
         .col-12
-          .text-content
-            h1.text-content__header Hi, I’m Jason. Nice to meet you!
-            h3.text-content__sub I started nearly 4 years ago, and from that time, I already made over hundreds of websites. From static websites to full Wordpress sites, you name it. I'm quietly confident, naturally curious, and perpetually improving my craft.
+          .content
+            h1.content__header.text-center Things I'm good at
+        .col-md-6.equal
+          .content.content__first.content__border
+            img(src='./assets/images/frontend-icon.png').content__image
+            h2.content__sub Front-end Development
+            p.content__text I create most of the websites that I made using Wordpress. I love to code things from scratch most of the time and enjoy bringing design ideas to life in the browser.
+            h3.content__green Languages I speak:
+            p.content__text HTML, CSS, Sass, PugJS, PHP, Javascript, jQuery, ReactJS.
+            h3.content__green Dev tools that I use:
+            ul.content__list
+              each dev in ['Visual Studio Code', 'Wordpress', 'Woocommerce', 'Wordpress Theme Development', 'Bootstrap', 'Github', 'Bitbucket', 'Heroku', 'Codepen', 'Terminal', 'cPanel', 'mySQL']
+                li.content__list--items= dev
+        .col-md-6.equal
+          .content.content__border
+            img(src='./assets/images/design-icon.png').content__image
+            h2.content__sub Graphic Design
+            p.content__text I value simple content structure, clean design patterns, and thoughtful interactions. I believe in a minimalist approach towards design.
+            h3.content__green Things I enjoy designing:
+            p.content__text UI/UX, Web, Mobile, Apps, Branding, Social Media.
+            h3.content__green Design tools that I use:
+            ul.content__list
+              each design in ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe Experience Design', 'Adobe InDesign', 'Sketch', 'InvisionApp', 'Figma']
+                li.content__list--items= design
+  section.works#works
+    .container-fluid
+      .row
+        .col-12
+          .content
+            h1.content__header.text-center Some of my works
+        .col-md-6.col-lg-4
+          .works__image.works__image--sl
+            a(href='http://survivallife.com' target='_blank').works__image--container
+              img(src='./assets/images/sl-logo.png').img-fluid.works__image--logo
+              img(src='./assets/images/sl-bg.jpg').img-fluid.featured
+        .col-md-6.col-lg-4
+          .works__image.works__image--diy
+            a(href='http://diyready.com' target='_blank').works__image--container
+              img(src='./assets/images/diy-logo.png').img-fluid.works__image--logo
+              img(src='./assets/images/diy-bg.jpg').img-fluid.featured
+        .col-md-6.col-lg-4
+          .works__image.works__image--iconic
+            a(href='https://www.behance.net/gallery/55529257/Iconic-Mind-Website-Redesign' target='_blank').works__image--container
+              img(src='./assets/images/iconic-logo.png').img-fluid.works__image--logo
+              img(src='./assets/images/iconic-bg.jpg').img-fluid.featured
+        .col-md-6.col-lg-4
+          .works__image.works__image--ukt
+            a(href='http://uktilesales.co.uk' target='_blank').works__image--container
+              img(src='./assets/images/ukt-logo.png').img-fluid.works__image--logo
+              img(src='./assets/images/ukt-bg.jpg').img-fluid.featured
+        .col-md-6.col-lg-4
+          .works__image.works__image--yourdebt
+            a(href='http://www.yourdebtaid.com' target='_blank').works__image--container
+              img(src='./assets/images/yourdebt-logo.png').img-fluid.works__image--logo
+              img(src='./assets/images/yourdebt-bg.jpg').img-fluid.featured
+        .col-md-6.col-lg-4
+          .works__image.works__image--dpl
+            a(href='http://dplcash.com' target='_blank').works__image--container
+              img(src='./assets/images/dpl-logo.png').img-fluid.works__image--logo
+              img(src='./assets/images/dpl-bg.jpg').img-fluid.featured

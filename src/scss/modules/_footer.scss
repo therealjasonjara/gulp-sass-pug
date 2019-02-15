@@ -5,6 +5,7 @@
   right: 30px;
   background: $dark-gray;
   transition: all ease .3s;
+  border: 1px solid $white;
 
   @include media($max, $phone-large) {
     right: 20px;

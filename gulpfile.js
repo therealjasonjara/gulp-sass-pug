@@ -3,12 +3,14 @@ var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var bs = require('browser-sync').create();
 var minifyjs = require('gulp-minify');
+var autoprefixer = require('gulp-autoprefixer')
 var cleanCSS = require('gulp-clean-css');
 
 gulp.task('sass', () => {
   return gulp.src('src/scss/*.scss')
     .pipe(sass())
-    .pipe(cleanCSS())
+    .pipe(autoprefixer())
+    //.pipe(cleanCSS())
     .pipe(gulp.dest('./public'))
     .pipe(bs.stream());
 });

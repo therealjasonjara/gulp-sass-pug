@@ -19,6 +19,17 @@ $s-font: 'Coolvetica', 'Poppins', sans-serif;
   color: $dark-gray;
 }
 
+.bg-dark-gray {
+  background: $dark-gray;
+}
+
+.bg-green {
+  background: $green;
+}
+
+.bg-white {
+  background: $white;
+}
 
 //for media query
 $viewport-increment: 1px; // customize to suite
@@ -40,3 +51,9 @@ $phone-small :  360px;
 // Constraints
 $min: min-width;
 $max: max-width;
+
+// Extensions
+
+%transition {
+  transition: .3s all ease-in;
+}
