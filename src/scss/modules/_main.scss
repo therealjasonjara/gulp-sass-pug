@@ -62,7 +62,7 @@
 .content {
   &__header {
     letter-spacing: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: $green;
   }
 
@@ -75,7 +75,8 @@
   padding: 50px 0 0;
   position: relative;
   border-bottom: 1px solid $green;
-  background: $dark-gray;
+  // background: $dark-gray;
+  background: linear-gradient(to bottom, #243B39 0%, $dark-gray 100%);
 
   .profile-img {
     border: 5px solid $green;
@@ -93,7 +94,7 @@
   }
 
   .content {
-    background: $dark-gray;
+    // background: $dark-gray;
     text-align: center;
     padding: 100px 25px;
     margin-top: -70px;
@@ -143,23 +144,23 @@
       color: $white;
       @extend %transition; 
 
-      &:hover {
-        background: $white;
-        // transform: scale(0.99);
-        // -webkit-box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
-        //    -moz-box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
-        //         box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
+      // &:hover {
+      //   background: $white;
+      //   // transform: scale(0.99);
+      //   // -webkit-box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
+      //   //    -moz-box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
+      //   //         box-shadow: inset 0px 0px 42px -13px rgba(37,37,39,1);
   
-        .content__sub {
-          color: $dark-gray;
-        }
+      //   .content__sub {
+      //     color: $dark-gray;
+      //   }
 
-        .content__text,
-        .content__list--items,
-        .content__green {
-          color: $dark-gray;
-        }
-      }
+      //   .content__text,
+      //   .content__list--items,
+      //   .content__green {
+      //     color: $dark-gray;
+      //   }
+      // }
 
       @include media($min, $tablet-normal) {
         border: 1px solid $green;
@@ -202,13 +203,25 @@
 .works {
   padding: 50px 0;
   //background: $dark-gray;
+  background: linear-gradient(to bottom, $dark-gray 50%, $green 100%);
   color: $dark-gray;
   
   .content {
     text-align: center;
+
+    &__sub {
+      color: $white;
+      width: 50%;
+      margin: 0 auto 50px;
+
+      a:hover {
+        color: $green;
+      }
+    }
     
     &__header {
-      color: $dark-gray;
+      color: $green;
+
     }
   }
 
@@ -268,6 +281,40 @@
     &--dpl {
       background: #1d753c;
     }
+  }
 
+  .social {
+
+    &__text {
+      color: $dark-gray;
+      margin-bottom: 20px;
+    }
+
+    &__items {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 0 20px;
+      border: 2px solid $dark-gray;
+      padding: 10px 20px;
+      border-radius: 40px;
+      @extend %transition;
+
+      &:hover {
+        background: $dark-gray;
+
+        a {
+          color: $green;
+        }
+      }
+
+      a {
+        color: $dark-gray;
+        font-size: 2rem;
+      }
+    }
   }
 }
