@@ -30,23 +30,23 @@ main.site-content
             h1.content__header.text-center Things I'm good at
         .col-md-6.equal
           .content.content__first.content__border
-            img(src='./assets/images/frontend-icon.png').content__image
+            img(src='./assets/images/frontend-icon-light.png').content__image
             h2.content__sub Front-end Development
             p.content__text I create most of the websites that I made using Wordpress. I love to code things from scratch most of the time and enjoy bringing design ideas to life in the browser.
-            h3.content__green Languages I speak:
+            p.content__green Languages I speak:
             p.content__text HTML, CSS, Sass, PugJS, PHP, Javascript, jQuery, ReactJS.
-            h3.content__green Dev tools that I use:
+            p.content__green Dev tools that I use:
             ul.content__list
               each dev in ['Visual Studio Code', 'Wordpress', 'Woocommerce', 'Wordpress Theme Development', 'Bootstrap', 'Github', 'Bitbucket', 'Heroku', 'Codepen', 'Terminal', 'cPanel', 'mySQL']
                 li.content__list--items= dev
         .col-md-6.equal
           .content.content__border
-            img(src='./assets/images/design-icon.png').content__image
+            img(src='./assets/images/design-icon-light.png').content__image
             h2.content__sub Graphic Design
             p.content__text I value simple content structure, clean design patterns, and thoughtful interactions. I believe in a minimalist approach towards design.
-            h3.content__green Things I enjoy designing:
+            p.content__green Things I enjoy designing:
             p.content__text UI/UX, Web, Mobile, Apps, Branding, Social Media.
-            h3.content__green Design tools that I use:
+            p.content__green Design tools that I use:
             ul.content__list
               each design in ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe Experience Design', 'Adobe InDesign', 'Sketch', 'InvisionApp', 'Figma']
                 li.content__list--items= design
@@ -57,7 +57,7 @@ main.site-content
           .content
             h1.content__header.text-center Some of my works
             h3.content__sub.text-center Here are a few projects that I worked recently. <br>Want to see more? 
-              a(href="#").font-green Email me.
+              a(href="mailto:therealjasonjara@gmail.com?Subject=Hello%20there!").font-green Email me.
         .col-md-6.col-lg-4
           .works__image.works__image--sl
             a(href='http://survivallife.com' target='_blank').works__image--container
@@ -93,10 +93,18 @@ main.site-content
             h3.social__text See more works on:
             ul.social__items
               li.social__item
-                a(href="#").social__items--github
+                a(href="https://github.com/therealjasonjara" target="_blank").social__items--github
                   i.fa.fa-github
                   |   Github
               li.social__item
-                a(href="#").social__items--behance 
+                a(href="https://behance.net/therealjasonjara" target="_blank").social__items--behance 
                   i.fa.fa-behance-square
-                  |   Behance
+                  |    Behance
+  section.contact#contact
+    .container
+      .row
+        .col-md-12
+          .contact__container
+            h1.content__header Let's build<br>something
+            h3.content__sub.contact__container--sub Interested in working together? Let’s chat and get started with the project.
+            a(href="mailto:therealjasonjara@gmail.com?Subject=Hello%20there!").contact__container--link Let's get started!

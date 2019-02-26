@@ -1,6 +1,7 @@
 $dark-gray: #252527;
 $white: #fff;
-$green: #08FDD8;
+$green: #08fdd8;
+// $green: #22ddb5;
 $black: #000;
 
 
@@ -55,5 +56,5 @@ $max: max-width;
 // Extensions
 
 %transition {
-  transition: .3s all ease-in;
+  transition: .2s all ease-in-out;
 }

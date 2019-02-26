@@ -137,6 +137,7 @@
 
     &__sub {
       color: $green;
+      margin-bottom: 20px;
       @extend %transition;
     }
 
@@ -183,14 +184,15 @@
     }
 
     &__text {
-      margin: 20px 0 50px;
+      margin: 0 0 50px;
       font-weight: 300;
       @extend %transition;
     }
 
     &__green {
       color: $green;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      font-size: 1.25rem;
     }
 
     &__list {
@@ -211,7 +213,7 @@
 
     &__sub {
       color: $white;
-      width: 50%;
+      width: 60%;
       margin: 0 auto 50px;
 
       a:hover {
@@ -284,7 +286,6 @@
   }
 
   .social {
-
     &__text {
       color: $dark-gray;
       margin-bottom: 20px;
@@ -294,6 +295,10 @@
       display: flex;
       padding: 0;
       justify-content: center;
+
+      @include media($max, $tablet-normal) {
+        flex-direction: column;
+      }
     }
 
     &__item {
@@ -302,6 +307,11 @@
       padding: 10px 20px;
       border-radius: 40px;
       @extend %transition;
+
+      @include media($max, $tablet-normal) {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
 
       &:hover {
         background: $dark-gray;
@@ -316,5 +326,54 @@
         font-size: 2rem;
       }
     }
+  }
+}
+
+.contact {
+  background: linear-gradient(to bottom, #46FDD8 50%, $white 50%);
+
+  &__container {
+    background: $dark-gray;
+    color: $white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 50px 0;
+
+    &--sub {
+      width: 60%;
+      margin: 0 auto;
+      padding-bottom: 35px;
+
+      @include media($max, $tablet-normal) {
+        width: 90%;
+      }
+    }
+
+    &--link {
+      padding: 15px 50px;
+      border: 2px solid $green;
+      color: $white;
+      font-size: 2rem;
+      border-radius: 50px;
+      display: inline-block;
+      @extend %transition;
+
+      @include media($max, $tablet-normal) {
+        font-size: 1.5rem;
+        padding: 10px 25px;
+      }
+
+      &:hover {
+        background: $green;
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+.footer {
+  .footer-text {
+    color: $dark-gray;
+    font-family: $p-font;
   }
 }
