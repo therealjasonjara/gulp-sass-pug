@@ -58,3 +58,11 @@ $max: max-width;
 %transition {
   transition: .2s all ease-in-out;
 }
+
+%transition-slow {
+  transition: .3s all ease-out;
+}
+
+%animation-scale-up {
+  animation: scale-up 0.5s ease-in-out both;
+}

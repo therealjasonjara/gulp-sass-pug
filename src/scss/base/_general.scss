@@ -112,3 +112,66 @@ a:hover {
 ul {
   list-style: none;
 }
+
+// Animate on scroll css
+
+.scale-up {
+  animation: scale-up 0.5s ease-in-out both;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0.9);
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-up {
+  animation: scale-up 0.5s ease-in-out both;
+}
+
+.first {
+  animation-delay: 0.5s;
+}
+
+.second {
+  animation-delay: 1s;
+}
+
+.third {
+  animation-delay: 1.5s;
+}
+
+.works__image {
+  &--sl {
+    animation-delay: 0.2s;
+  }
+
+  &--diy {
+    animation-delay: 0.4s;
+  }
+
+  &--iconic {
+    animation-delay: 0.6s;
+  }
+
+  &--ukt {
+    animation-delay: 0.8s;
+  }
+
+  &--yourdebt {
+    animation-delay: 1s;
+  }
+
+  &--dpl {
+    animation-delay: 1.2s;
+  }
+}
