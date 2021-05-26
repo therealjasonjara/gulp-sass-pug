@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "postcss": "^8.2.10",
     "pug": "^3.0.1"
   },
   "devDependencies": {
